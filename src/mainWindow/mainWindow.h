@@ -19,11 +19,19 @@
 #ifndef MAINWINDOW
 #define MAINWINDOW
     #include <QMainWindow>
+    #include <QWidget>
     namespace sosFiles
     {
         class MainWindow
         {
+            private:
+            QMainWindow *mainWindow;
 
+            public:
+            MainWindow(QWidget *parent);
+            ~MainWindow();
+
+            void showWindow();
         };
     }
 

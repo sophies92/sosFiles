@@ -16,7 +16,12 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+#include <QApplication>
+#include "mainWindow/mainWindow.h"
 int main(int argc, char* argv[])
 {
-    return 0;
+    QApplication app(argc, argv);
+    sosFiles::MainWindow *mainWindow = new sosFiles::MainWindow(nullptr);
+    
+    return app.exec();
 }
