@@ -35,6 +35,9 @@ set(CMAKE_AUTOUIC ON)
 
 set(PROJECT_SOURCES
     src/main.cpp
+
+    src/mainWindow/mainWindow.h
+    src/mainWindow/mainWindow.cpp
 )
 
 add_executable(sosFiles ${PROJECT_SOURCES})
