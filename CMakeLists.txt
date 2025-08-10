@@ -1,5 +1,5 @@
-#[[ <one line to give the program's name and a brief idea of what it does.>
-    Copyright (C) <year>  <name of author>
+#[[ sosFiles - A file browser.
+    Copyright (C) 2025  Sophie Short
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -17,13 +17,15 @@
 cmake_minimum_required(VERSION 3.10)
 
 project(
-        sosFiles
-        VERSION 0.1
-        LANGUAGES CXX)
+    sosFiles
+    VERSION 0.1
+    LANGUAGES CXX
+)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+set(CMAKE_PREFIX_PATH /opt/qt6/6.9.1/gcc_64)
 find_package(Qt6 REQUIRED COMPONENTS Core Widgets)
 
 set(CMAKE_AUTOMOC ON)
@@ -34,8 +36,9 @@ set(PROJECT_SOURCES
     src/main.cpp
 )
 
+add_executable(sosFiles ${PROJECT_SOURCES})
+
 target_link_libraries(
-    sosText PRIVATE Qt6::Widgets Qt6::Core
+    sosFiles PRIVATE Qt6::Widgets Qt6::Core
 )
 
-add_executable(sosFiles ${PROJECT_SOURCES})
