@@ -21,6 +21,7 @@
 sosFiles::MainWindow::MainWindow(QWidget *parent)
 {
     mainWindow = new QMainWindow(parent);
+    mainWindow->setWindowTitle("sosFiles");
     showWindow();
 }
 
