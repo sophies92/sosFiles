@@ -32,6 +32,7 @@
             ~MainWindow();
 
             void showWindow();
+            void setCentralWidget(QWidget *widget);
 
             private:
             void addMenubar();

@@ -35,6 +35,11 @@ void sosFiles::MainWindow::showWindow()
     this->showMaximized();
 }
 
+void sosFiles::MainWindow::setCentralWidget(QWidget *widget)
+{
+    this->setCentralWidget(widget);
+}
+
 void sosFiles::MainWindow::addMenubar()
 {
     QMenu *fileMenu = new QMenu(this->menuBar());
