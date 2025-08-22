@@ -1,7 +1,14 @@
-# 1 - Licence
-sosFiles - A file browser.
+# sosFiles
+
+## 1 - Description
+sosFiles is a file browser. It is released as part of the sosSuite.
 Copyright (C) 2025  Sophie Short
 
+## 2 - Features
+
+## 3 - Known Bugs
+
+## 4 - Licence
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
