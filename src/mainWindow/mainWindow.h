@@ -22,6 +22,7 @@
     #include <QWidget>
     #include <QMenuBar>
     #include <QMenu>
+    #include <QAction>
     namespace sosFiles
     {
         class MainWindow : QMainWindow
@@ -31,6 +32,8 @@
             ~MainWindow();
 
             void showWindow();
+
+            private:
             void addMenubar();
         };
     }

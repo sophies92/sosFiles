@@ -41,11 +41,20 @@ void sosFiles::MainWindow::addMenubar()
     fileMenu->setTitle("&File");
     this->menuBar()->addMenu(fileMenu);
 
+    QAction *settingsAction = new QAction(fileMenu);
+    settingsAction->setText("&Settings");
+    fileMenu->addAction(settingsAction);
+
     QAction *exitAction = new QAction(fileMenu);
     exitAction->setText("E&xit");
     fileMenu->addAction(exitAction);
 
+
     QMenu *aboutMenu = new QMenu(this->menuBar());
     aboutMenu->setTitle("&About");
     this->menuBar()->addMenu(aboutMenu);
+
+    QAction *aboutAction = new QAction(aboutMenu);
+    aboutAction->setText("&About");
+    aboutMenu->addAction(aboutAction);
 }
