@@ -20,18 +20,18 @@
 #define MAINWINDOW
     #include <QMainWindow>
     #include <QWidget>
+    #include <QMenuBar>
+    #include <QMenu>
     namespace sosFiles
     {
-        class MainWindow
+        class MainWindow : QMainWindow
         {
-            private:
-            QMainWindow *mainWindow;
-
             public:
             MainWindow(QWidget *parent);
             ~MainWindow();
 
             void showWindow();
+            void addMenubar();
         };
     }
 

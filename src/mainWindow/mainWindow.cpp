@@ -20,17 +20,32 @@
 
 sosFiles::MainWindow::MainWindow(QWidget *parent)
 {
-    mainWindow = new QMainWindow(parent);
-    mainWindow->setWindowTitle("sosFiles");
+    this->setWindowTitle("sosFiles");
+    addMenubar();
     showWindow();
 }
 
 sosFiles::MainWindow::~MainWindow()
 {
-    delete mainWindow;
+
 }
 
 void sosFiles::MainWindow::showWindow()
 {
-    mainWindow->showMaximized();
+    this->showMaximized();
+}
+
+void sosFiles::MainWindow::addMenubar()
+{
+    QMenu *fileMenu = new QMenu(this->menuBar());
+    fileMenu->setTitle("&File");
+    this->menuBar()->addMenu(fileMenu);
+
+    QAction *exitAction = new QAction(fileMenu);
+    exitAction->setText("E&xit");
+    fileMenu->addAction(exitAction);
+
+    QMenu *aboutMenu = new QMenu(this->menuBar());
+    aboutMenu->setTitle("&About");
+    this->menuBar()->addMenu(aboutMenu);
 }
