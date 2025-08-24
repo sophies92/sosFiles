@@ -18,9 +18,9 @@
 
 #include "mainWindow.h"
 
-sosware::mainWindow::MainWindow::MainWindow(QWidget *parent)
+sosware::mainWindow::MainWindow::MainWindow(QWidget *parent, QString title)
 {
-    this->setWindowTitle("sosFiles");
+    this->setWindowTitle(title);
     addMenubar();
     showWindow();
 }

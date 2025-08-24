@@ -21,7 +21,7 @@
 int main(int argc, char* argv[])
 {
     QApplication app(argc, argv);
-    sosware::mainWindow::MainWindow *mainWindow = new sosware::mainWindow::MainWindow(nullptr);
+    sosware::mainWindow::MainWindow *mainWindow = new sosware::mainWindow::MainWindow(nullptr, "sosFiles");
     
     return app.exec();
 }

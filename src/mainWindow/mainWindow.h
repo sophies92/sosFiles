@@ -20,6 +20,7 @@
 #define MAINWINDOW
     #include <QMainWindow>
     #include <QWidget>
+    #include <QString>
     #include <QMenuBar>
     #include <QMenu>
     #include <QAction>
@@ -30,7 +31,7 @@
             class MainWindow : QMainWindow
             {
                 public:
-                MainWindow(QWidget *parent);
+                MainWindow(QWidget *parent, QString title);
                 ~MainWindow();
 
                 void showWindow();
