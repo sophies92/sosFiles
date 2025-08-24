@@ -22,6 +22,7 @@
     #include <QWidget>
     #include <QString>
     #include <QMenuBar>
+    #include <QStatusBar>
     #include <QMenu>
     #include <QAction>
     namespace sosware
@@ -39,6 +40,7 @@
 
                 private:
                 void addMenubar();
+                void addStatusbar();
             };
         }
     }

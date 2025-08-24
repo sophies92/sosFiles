@@ -22,6 +22,7 @@ sosware::mainWindow::MainWindow::MainWindow(QWidget *parent, QString title)
 {
     this->setWindowTitle(title);
     addMenubar();
+    addStatusbar();
     showWindow();
 }
 
@@ -62,4 +63,10 @@ void sosware::mainWindow::MainWindow::addMenubar()
     QAction *aboutAction = new QAction(aboutMenu);
     aboutAction->setText("&About");
     aboutMenu->addAction(aboutAction);
+}
+
+void sosware::mainWindow::MainWindow::addStatusbar()
+{
+    QStatusBar *statusbar = new QStatusBar(this);
+    this->setStatusBar(statusbar);
 }
