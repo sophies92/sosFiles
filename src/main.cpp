@@ -16,12 +16,14 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+#define WINDOW_TITLE "sosFiles"
+
 #include <QApplication>
 #include "mainWindow/mainWindow.h"
 int main(int argc, char* argv[])
 {
     QApplication app(argc, argv);
-    sosware::mainWindow::MainWindow *mainWindow = new sosware::mainWindow::MainWindow(nullptr, "sosFiles");
+    sosware::mainWindow::MainWindow *mainWindow = new sosware::mainWindow::MainWindow(nullptr, WINDOW_TITLE);
     
     return app.exec();
 }
