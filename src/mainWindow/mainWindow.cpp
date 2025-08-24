@@ -54,6 +54,7 @@ void sosware::mainWindow::MainWindow::addMenubar()
     QAction *exitAction = new QAction(fileMenu);
     exitAction->setText("E&xit");
     fileMenu->addAction(exitAction);
+    connect(exitAction, &QAction::triggered, this, &QMainWindow::close);
 
 
     QMenu *aboutMenu = new QMenu(this->menuBar());
