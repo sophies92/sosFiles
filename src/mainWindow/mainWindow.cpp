@@ -18,29 +18,29 @@
 
 #include "mainWindow.h"
 
-sosFiles::MainWindow::MainWindow(QWidget *parent)
+sosware::mainWindow::MainWindow::MainWindow(QWidget *parent)
 {
     this->setWindowTitle("sosFiles");
     addMenubar();
     showWindow();
 }
 
-sosFiles::MainWindow::~MainWindow()
+sosware::mainWindow::MainWindow::~MainWindow()
 {
 
 }
 
-void sosFiles::MainWindow::showWindow()
+void sosware::mainWindow::MainWindow::showWindow()
 {
     this->showMaximized();
 }
 
-void sosFiles::MainWindow::setCentralWidget(QWidget *widget)
+void sosware::mainWindow::MainWindow::setCentralWidget(QWidget *widget)
 {
     this->setCentralWidget(widget);
 }
 
-void sosFiles::MainWindow::addMenubar()
+void sosware::mainWindow::MainWindow::addMenubar()
 {
     QMenu *fileMenu = new QMenu(this->menuBar());
     fileMenu->setTitle("&File");

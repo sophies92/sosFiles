@@ -23,20 +23,23 @@
     #include <QMenuBar>
     #include <QMenu>
     #include <QAction>
-    namespace sosFiles
+    namespace sosware
     {
-        class MainWindow : QMainWindow
+        namespace mainWindow
         {
-            public:
-            MainWindow(QWidget *parent);
-            ~MainWindow();
+            class MainWindow : QMainWindow
+            {
+                public:
+                MainWindow(QWidget *parent);
+                ~MainWindow();
 
-            void showWindow();
-            void setCentralWidget(QWidget *widget);
+                void showWindow();
+                void setCentralWidget(QWidget *widget);
 
-            private:
-            void addMenubar();
-        };
+                private:
+                void addMenubar();
+            };
+        }
     }
 
 
