@@ -19,7 +19,6 @@
 #ifndef DIRECTORYBROWSER_H
 #define DIRECTORYBROWSER_H
     #include <QFrame>
-    #include <QLayout>
     namespace sosware
     {
         namespace directoryBrowser
