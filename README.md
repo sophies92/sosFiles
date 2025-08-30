@@ -1,7 +1,7 @@
 # sosFiles
 
 ## 1 - Description
-sosFiles is a file browser. It is released as part of the sosSuite.
+sosFiles is a file browser. It is released as part of the sosSuite.  
 Copyright (C) 2025  Sophie Short
 
 ## 2 - Features
