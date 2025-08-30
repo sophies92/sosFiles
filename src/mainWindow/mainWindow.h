@@ -32,7 +32,7 @@
             class MainWindow : QMainWindow
             {
                 public:
-                MainWindow(QWidget *parent, QString title);
+                MainWindow(QWidget *parent = nullptr, QString title = "sosware");
                 ~MainWindow();
 
                 void showWindow();

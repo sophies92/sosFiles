@@ -19,13 +19,16 @@
 #ifndef DIRECTORYBROWSER_H
 #define DIRECTORYBROWSER_H
     #include <QFrame>
+    #include <QLayout>
     namespace sosware
     {
         namespace directoryBrowser
         {
             class directoryBrowser : QFrame
             {
-
+                public:
+                directoryBrowser(QWidget *parent = nullptr);
+                ~directoryBrowser();
             };
         }
     }

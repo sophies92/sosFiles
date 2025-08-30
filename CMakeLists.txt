@@ -38,6 +38,9 @@ set(PROJECT_SOURCES
 
     src/mainWindow/mainWindow.h
     src/mainWindow/mainWindow.cpp
+
+    src/directoryBrowser/directoryBrowser.h
+    src/directoryBrowser/directoryBrowser.cpp
 )
 
 add_executable(sosFiles ${PROJECT_SOURCES})

@@ -17,3 +17,12 @@
 */
 
 #include "directoryBrowser.h"
+
+sosware::directoryBrowser::directoryBrowser::directoryBrowser(QWidget *parent)
+{
+    this->show();
+}
+
+sosware::directoryBrowser::directoryBrowser::~directoryBrowser()
+{
+}
