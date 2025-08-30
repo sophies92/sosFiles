@@ -24,11 +24,11 @@
     {
         namespace directoryBrowser
         {
-            class directoryBrowser : QFrame
+            class DirectoryBrowser : QFrame
             {
                 public:
-                directoryBrowser(QWidget *parent = nullptr);
-                ~directoryBrowser();
+                DirectoryBrowser(QWidget *parent = nullptr);
+                ~DirectoryBrowser();
             };
         }
     }

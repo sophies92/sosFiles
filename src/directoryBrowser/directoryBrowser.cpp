@@ -18,11 +18,11 @@
 
 #include "directoryBrowser.h"
 
-sosware::directoryBrowser::directoryBrowser::directoryBrowser(QWidget *parent)
+sosware::directoryBrowser::DirectoryBrowser::DirectoryBrowser(QWidget *parent)
 {
     this->show();
 }
 
-sosware::directoryBrowser::directoryBrowser::~directoryBrowser()
+sosware::directoryBrowser::DirectoryBrowser::~DirectoryBrowser()
 {
 }
